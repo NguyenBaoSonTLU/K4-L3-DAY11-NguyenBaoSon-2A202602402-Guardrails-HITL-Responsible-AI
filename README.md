@@ -1,5 +1,19 @@
 # Day 11 — Controlled Agent Security (2026)
 
+## Local dashboard
+
+Install the packages in `requirements.txt`, then run the browser UI from the
+repository root:
+
+```powershell
+.\.venv\Scripts\python.exe -m uvicorn app:app --reload
+```
+
+Open `http://127.0.0.1:8000`. The dashboard includes Blue chat, a decision
+trace, local input/output and permission checks, and read-only summaries of
+generated evidence in `outputs/`. Chat uses the server-side `OPENROUTER_API_KEY`;
+the local checks and evidence view work without a model connection.
+
 > 👤 **Hình thức:** bài tập **cá nhân** (1 người / 1 MSSV).  
 > 🎯 **Mục tiêu:** xây **Blue** (phòng thủ), rồi red-team **Red** + **Red Advance**.  
 > ✅ Làm theo **Checkpoint 1 → 5** trong [`CHECKPOINTS.md`](CHECKPOINTS.md) · nộp theo [`SUBMISSION.md`](SUBMISSION.md).
